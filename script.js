@@ -80,11 +80,36 @@
 
 
     function turnAround () {
-    if (direction === 'positive') {
-        direction = 'negative';
-    } else {
+        if (direction === 'positive') {
+            direction = 'negative';
+        } else {
         direction = 'positive';
     }
+
+
+
+    function turnLeft () {
+        if (direction === 'North') {
+            direction = 'West';
+        
+        } else if (direction === 'West') {
+                direction = 'South';
+
+        } else if (direction === 'South') {
+            direction = 'East';}
+
+        } else (direction === 'East'){
+            direction = 'North';
+        }
+    }
+
+    function turnRight () {
+        if (direction === 'positive') {
+            direction = 'negative';
+        } else {
+            direction = 'positive';
+        }
+
    }
  
 
